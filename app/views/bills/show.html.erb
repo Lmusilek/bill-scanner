@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @bill %>
+<%= cl_image_tag @bill.photo.key, height: 300 %>
+<div>
+  <%= link_to "Edit this bill", edit_bill_path(@bill) %> |
+  <%= link_to "Back to bills", root_path %>
+
+  <%= button_to "Destroy this bill", @bill, method: :delete %>
+</div>
